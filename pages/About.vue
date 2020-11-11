@@ -1,7 +1,17 @@
-<template></template>
+<template>
+ <div>
+  <PageName name="About" />
+ </div>
+</template>
 
 <script>
-export default {};
+import PageName from "@/components/PageName";
+export default {
+ layout: "LForm",
+ components: {
+  PageName,
+ },
+};
 </script>
 
 <style scoped>
