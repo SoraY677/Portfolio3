@@ -22,13 +22,13 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 nav {
  position: fixed;
- left:10px;
+ left: 10px;
  width: 50px;
  height: 100%;
- transform:translateY(10px);
+ transform: translateY(10px);
 }
 
 nav,

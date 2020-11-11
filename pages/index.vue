@@ -26,7 +26,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 .keyvisual {
  width: 100%;
  height: 100%;

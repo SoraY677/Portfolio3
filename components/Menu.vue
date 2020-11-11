@@ -10,18 +10,18 @@
  </div>
 </template>
 
-<style scope>
+<style scoped>
 button {
  width: 100%;
  height: 100%;
- padding:15%;
+ padding: 15%;
  border-radius: 50%;
 }
 
-.bar-container{
-	position: relative;
-	width:100%;
-	height:100%;
+.bar-container {
+ position: relative;
+ width: 100%;
+ height: 100%;
 }
 
 .bar,
