@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/reset.css',
     '@/assets/common.css'
   ],
   /*
