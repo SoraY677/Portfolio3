@@ -25,8 +25,10 @@ export default {
 <style scope>
 nav {
  position: fixed;
+ left:10px;
  width: 50px;
  height: 100%;
+ transform:translateY(10px);
 }
 
 nav,
@@ -39,6 +41,6 @@ nav.active {
 }
 
 .menu-btn.active {
- transform: rotate(45deg);
+ transform: rotate(135deg);
 }
 </style>
