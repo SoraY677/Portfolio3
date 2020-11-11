@@ -1,0 +1,24 @@
+<template>
+ <p class="container">
+  {{ name }}
+ </p>
+</template>
+
+<script>
+export default {
+ props: {
+  name: "",
+ },
+};
+</script>
+
+<style scoped>
+.container {
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ font-size: 6rem;
+ opacity: 0.6;
+ writing-mode: vertical-rl;
+}
+</style>
