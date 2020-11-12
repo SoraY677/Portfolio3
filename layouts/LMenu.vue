@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div ref="test">
   <div class="overlay" :class="{ active: isActive }"></div>
   <nav :class="{ active: isActive }">
    <div class="menu-btn-container">
@@ -17,7 +17,7 @@
      class="menu-item"
      :class="{ active: isActive }"
     >
-     <nuxt-link :to="item">
+     <nuxt-link @click.native="closeMenu()" :to="item">
       {{ item }}
      </nuxt-link>
     </li>
@@ -37,6 +37,12 @@ export default {
  },
  components: {
   Menu,
+ },
+ methods: {
+  //メニューを閉じる
+  closeMenu() {
+   this.isActive = false;
+  },
  },
 };
 </script>
