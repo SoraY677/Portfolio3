@@ -5,6 +5,18 @@
    class="menu-btn"
    :class="{ active: isActive }"
   />
+  <ul>
+   <li
+    v-for="item in linkList"
+    :key="item.id"
+    class="menu-item"
+    :class="{ active: isActive }"
+   >
+    <nuxt-link :to="item">
+     {{ item }}
+    </nuxt-link>
+   </li>
+  </ul>
  </nav>
 </template>
 
@@ -14,6 +26,7 @@ export default {
  data() {
   return {
    isActive: false,
+   linkList: ["About", "Work", "Blog", "Contact"],
   };
  },
  components: {
@@ -42,5 +55,17 @@ nav.active {
 
 .menu-btn.active {
  transform: rotate(135deg);
+}
+
+.menu-item {
+ opacity: 0;
+ transition-delay: 0s;
+ transition-duration: 0s;
+}
+
+.menu-item.active {
+ opacity: 1;
+ transition-delay: 0.5s;
+ transition-duration: 0.5s;
 }
 </style>
