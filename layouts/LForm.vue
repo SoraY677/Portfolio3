@@ -1,7 +1,7 @@
 <template>
  <div class="base-frame">
   <Menu />
-  <PageName :name="pageName" />
+  <PageName :name="getPageName" />
   <nuxt />
  </div>
 </template>
@@ -19,8 +19,10 @@ export default {
   Menu,
   PageName,
  },
- mounted() {
-  this.pageName = this.$route.name;
+ computed: {
+  getPageName: function () {
+   return this.$route.name;
+  },
  },
 };
 </script>
