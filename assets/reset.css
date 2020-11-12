@@ -23,3 +23,12 @@ html {
 button {
 	outline: none;
 }
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #2e2e2e;
+}
