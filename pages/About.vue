@@ -1,11 +1,16 @@
 <template>
- <div></div>
+  <div>
+    <MainIntro />
+  </div>
 </template>
 
 <script>
+import MainIntro from "@/components/About/MainIntro";
 export default {
- layout: "LForm",
- components: {},
+  layout: "LForm",
+  components: {
+    MainIntro,
+  },
 };
 </script>
 
