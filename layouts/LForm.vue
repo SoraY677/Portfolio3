@@ -1,8 +1,12 @@
 <template>
  <div class="base-frame">
   <Menu />
-  <PageName :name="getPageName" />
-  <nuxt />
+  <div class="left-side">
+   <PageName :name="getPageName" />
+  </div>
+  <div class="right-side">
+   <nuxt />
+  </div>
  </div>
 </template>
 
@@ -26,3 +30,20 @@ export default {
  },
 };
 </script>
+
+<style scoped>
+.left-side,
+.right-side {
+ float: left;
+ height: 100%;
+}
+
+.left-side {
+ position: relative;
+ width: 20%;
+}
+
+.right-side {
+ width: 80%;
+}
+</style>

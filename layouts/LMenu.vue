@@ -7,6 +7,7 @@
      @click="isActive = !isActive"
      class="menu-btn"
      :class="{ active: isActive }"
+     :isActive="isActive"
     />
    </div>
    <ul class="menu-list">

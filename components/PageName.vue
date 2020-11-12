@@ -14,7 +14,7 @@ export default {
 
 <style scoped>
 .container {
- position: fixed;
+ position: absolute;
  left: 0;
  bottom: 0;
  font-size: 6rem;
