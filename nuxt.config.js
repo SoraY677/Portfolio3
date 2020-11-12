@@ -40,7 +40,16 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-webfontloader'
   ],
+  /*
+  ** use web font
+   */
+  webfontloader: {
+    google: {
+      families: ['Open+Sans','Sawarabi+Gothic']
+    }
+  },
   /*
   ** Build configuration
   */
