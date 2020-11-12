@@ -42,5 +42,6 @@ export default {
   float: right;
   width: 80%;
   padding: 3%;
+  overflow-y: auto;
 }
 </style>
