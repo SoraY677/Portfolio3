@@ -1,12 +1,14 @@
 <template>
   <div class="base-frame">
     <Menu />
-    <div class="left-side">
-      <PageName :name="getPageName" />
-    </div>
-    <div class="right-side">
-      <nuxt />
-    </div>
+    <main>
+      <div class="left-side">
+        <PageName :name="getPageName" />
+      </div>
+      <div class="right-side">
+        <nuxt />
+      </div>
+    </main>
   </div>
 </template>
 
@@ -32,6 +34,11 @@ export default {
 </script>
 
 <style scoped>
+main {
+  width: 100%;
+  height: 100%;
+}
+
 .left-side {
   position: fixed;
   width: 20%;
@@ -41,6 +48,7 @@ export default {
 .right-side {
   float: right;
   width: 80%;
+  height: 100%;
   padding: 3%;
   overflow-y: auto;
 }
