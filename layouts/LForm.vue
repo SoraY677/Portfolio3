@@ -45,5 +45,6 @@ export default {
 
 .right-side {
  width: 80%;
+ padding: 3%;
 }
 </style>
