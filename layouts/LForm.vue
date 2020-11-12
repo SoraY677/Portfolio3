@@ -9,12 +9,14 @@
         <nuxt />
       </div>
     </main>
+    <LFooter />
   </div>
 </template>
 
 <script>
 import PageName from "@/components/PageName";
 import Menu from "~/layouts/LMenu.vue";
+import LFooter from "~/layouts/LFooter.vue";
 export default {
   data() {
     return {
@@ -23,6 +25,7 @@ export default {
   },
   components: {
     Menu,
+    LFooter,
     PageName,
   },
   computed: {
@@ -36,7 +39,8 @@ export default {
 <style scoped>
 main {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 .left-side {
@@ -50,6 +54,5 @@ main {
   width: 80%;
   height: 100%;
   padding: 3%;
-  overflow-y: auto;
 }
 </style>
